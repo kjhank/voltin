@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Alexandria';
+    src: local('Alexandria Black'), local('Alexandria-Black'),
+        url('subset-Alexandria-Black.woff2') format('woff2'),
+        url('subset-Alexandria-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: local('Alexandria Bold'), local('Alexandria-Bold'),
+        url('subset-Alexandria-Bold.woff2') format('woff2'),
+        url('subset-Alexandria-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: local('Alexandria ExtraBold'), local('Alexandria-ExtraBold'),
+        url('subset-Alexandria-ExtraBold.woff2') format('woff2'),
+        url('subset-Alexandria-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: local('Alexandria ExtraLight'), local('Alexandria-ExtraLight'),
+        url('subset-Alexandria-ExtraLight.woff2') format('woff2'),
+        url('subset-Alexandria-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: local('Alexandria Light'), local('Alexandria-Light'),
+        url('subset-Alexandria-Light.woff2') format('woff2'),
+        url('subset-Alexandria-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: local('Alexandria Regular'), local('Alexandria-Regular'),
+        url('subset-Alexandria-Regular.woff2') format('woff2'),
+        url('subset-Alexandria-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: local('Alexandria Medium'), local('Alexandria-Medium'),
+        url('subset-Alexandria-Medium.woff2') format('woff2'),
+        url('subset-Alexandria-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: local('Alexandria SemiBold'), local('Alexandria-SemiBold'),
+        url('subset-Alexandria-SemiBold.woff2') format('woff2'),
+        url('subset-Alexandria-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: local('Alexandria Thin'), local('Alexandria-Thin'),
+        url('subset-Alexandria-Thin.woff2') format('woff2'),
+        url('subset-Alexandria-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Black Italic'), local('BarlowCondensed-BlackItalic'),
+        url('subset-BarlowCondensed-BlackItalic.woff2') format('woff2'),
+        url('subset-BarlowCondensed-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Black'), local('BarlowCondensed-Black'),
+        url('subset-BarlowCondensed-Black.woff2') format('woff2'),
+        url('subset-BarlowCondensed-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Bold'), local('BarlowCondensed-Bold'),
+        url('subset-BarlowCondensed-Bold.woff2') format('woff2'),
+        url('subset-BarlowCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Bold Italic'), local('BarlowCondensed-BoldItalic'),
+        url('subset-BarlowCondensed-BoldItalic.woff2') format('woff2'),
+        url('subset-BarlowCondensed-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed ExtraBold Italic'), local('BarlowCondensed-ExtraBoldItalic'),
+        url('subset-BarlowCondensed-ExtraBoldItalic.woff2') format('woff2'),
+        url('subset-BarlowCondensed-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed ExtraLight'), local('BarlowCondensed-ExtraLight'),
+        url('subset-BarlowCondensed-ExtraLight.woff2') format('woff2'),
+        url('subset-BarlowCondensed-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed ExtraBold'), local('BarlowCondensed-ExtraBold'),
+        url('subset-BarlowCondensed-ExtraBold.woff2') format('woff2'),
+        url('subset-BarlowCondensed-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Italic'), local('BarlowCondensed-Italic'),
+        url('subset-BarlowCondensed-Italic.woff2') format('woff2'),
+        url('subset-BarlowCondensed-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed ExtraLight Italic'), local('BarlowCondensed-ExtraLightItalic'),
+        url('subset-BarlowCondensed-ExtraLightItalic.woff2') format('woff2'),
+        url('subset-BarlowCondensed-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Medium Italic'), local('BarlowCondensed-MediumItalic'),
+        url('subset-BarlowCondensed-MediumItalic.woff2') format('woff2'),
+        url('subset-BarlowCondensed-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'),
+        url('subset-BarlowCondensed-Regular.woff2') format('woff2'),
+        url('subset-BarlowCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Light Italic'), local('BarlowCondensed-LightItalic'),
+        url('subset-BarlowCondensed-LightItalic.woff2') format('woff2'),
+        url('subset-BarlowCondensed-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Light'), local('BarlowCondensed-Light'),
+        url('subset-BarlowCondensed-Light.woff2') format('woff2'),
+        url('subset-BarlowCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Medium'), local('BarlowCondensed-Medium'),
+        url('subset-BarlowCondensed-Medium.woff2') format('woff2'),
+        url('subset-BarlowCondensed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed SemiBold'), local('BarlowCondensed-SemiBold'),
+        url('subset-BarlowCondensed-SemiBold.woff2') format('woff2'),
+        url('subset-BarlowCondensed-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Thin'), local('BarlowCondensed-Thin'),
+        url('subset-BarlowCondensed-Thin.woff2') format('woff2'),
+        url('subset-BarlowCondensed-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed SemiBold Italic'), local('BarlowCondensed-SemiBoldItalic'),
+        url('subset-BarlowCondensed-SemiBoldItalic.woff2') format('woff2'),
+        url('subset-BarlowCondensed-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: local('Barlow Condensed Thin Italic'), local('BarlowCondensed-ThinItalic'),
+        url('subset-BarlowCondensed-ThinItalic.woff2') format('woff2'),
+        url('subset-BarlowCondensed-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
