@@ -1,0 +1,30 @@
+.hero {
+  .hero-text {
+    font-size: var(--f-s-13);
+    font-weight: var(--f-w-light);
+    line-height: 1.23;
+  }
+
+  .hero-heading {
+    font-size: var(--f-s-53);
+    font-weight: var(--f-w-medium);
+    line-height: 1.13;
+  }
+
+  &.home {
+    padding-inline: min(5.33vw, 20px);
+
+    .hero-image {
+      inline-size: 100vw;
+      margin-inline: calc(var(--layout-gap) * -1 - min(5.33vw, 20px));
+    }
+
+    .hero-text {
+      margin-block: min(7.47vw, 28px);
+    }
+
+    .choose-us {
+      margin-block-start: min(11.47vw, 43px);
+    }
+  }
+}

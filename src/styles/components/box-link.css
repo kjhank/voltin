@@ -1,0 +1,14 @@
+.box-link {
+  display: inline-block;
+
+  padding-inline: min(4.8vw, 18px);
+
+  font-family: var(--f-alt);
+  font-size: var(--f-s-16);
+  font-weight: var(--f-w-semibold);
+  line-height: 2.625;
+  color: var(--c-accent);
+  text-decoration: none;
+
+  border: min(0.4vw, 1.5px) solid var(--c-main);
+}

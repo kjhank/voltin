@@ -1,0 +1,18 @@
+.icons-grid {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  margin-block: min(22.13vw, 83px) 0;
+  list-style: none;
+
+  > li {
+    display: flex;
+    flex-direction: column;
+    gap: min(4vw, 15px);
+    align-items: center;
+
+    padding-inline: 6%;
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

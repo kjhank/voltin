@@ -1,8 +1,7 @@
 .layout {
-  --gap: calc(45vw - 625px);
-
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: var(--layout-gap) 1fr var(--layout-gap);
+  grid-template-rows: min-content;
 
   > *:not(.layout-full) {
     grid-column: 2;
@@ -13,11 +12,12 @@
   }
 
   @media (width > 800px) {
-    grid-template-columns: 1fr min(90vw, 1250px) 1fr;
-    margin-inline: auto;
+    /* grid-template-columns: min(10.42vw, 200px) min(90vw, 1250px) 1fr; */
 
-    &:is(main) {
+    /* margin-inline: auto; */
+
+    /* &:is(main) {
       margin-block-start: min(4.7vw, 61px);
-    }
+    } */
   }
 }

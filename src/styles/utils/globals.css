@@ -1,14 +1,20 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   overflow-x: clip;
   font-family: var(--f-body);
+  color: var(--c-main);
 
   & :focus {
     outline-color: var(--c-accent);
   }
+}
+
+responsive-image {
+  display: block;
 }
 
 .visually-hidden {

@@ -1,29 +1,64 @@
+/* stylelint-disable custom-property-empty-line-before */
 :root {
+  --c-accent: oklch(41% 0.15 265.47deg);
+  --c-main: #3c3c3c;
+  --c-alt: #fff;
+  --c-dim: #77787b;
+  --c-light: #e5e5e5;
+  --c-bright: #f6f6f6;
+
   --f-body: 'Alexandria', sans-serif;
-  --f-heading: 'Barlow Condensed', serif;
+  --f-alt: 'Barlow Condensed', serif;
+
+  --f-w-light: 300;
+  --f-w-medium: 500;
+  --f-w-semibold: 600;
+
+  --layout-gap: min(10vw, 37px);
+
+  --t-fast: 200ms;
 
   /* 9, 11, 12, 13, 16, 17, 19, 22, 23, 28, 30, 32, 50, 53 */
 
-  --f-s-9: clamp(9px, 1rem + 1.653vw, 19px);
+  --f-s-9: clamp(7px, 0.5625rem, 9px);
 
-  /* --f-s-11: clamp(11px, 1rem + 2vw, 23.5px); */
-  --f-s-12: clamp(12px, 1rem + 2.56vw, 26px);
+  --f-s-11: clamp(9px, 0.6875rem, 11px);
+  --f-s-12: clamp(10px, 0.75rem, 12px);
 
-  /* --f-s-13: clamp(13px, 1rem + 3.128vw, 27.73px); */
-  --f-s-16: clamp(16px, 1rem + 4.83vw, 34px);
+  --f-s-13: clamp(11px, 0.8125rem, 13px);
+  --f-s-16: clamp(13px, 1rem, 16px);
 
   /* --f-s-17: clamp(17px, 1rem + 9.6712vw, 36.267px); */
-  --f-s-19: clamp(19px, 1rem + 6.54vw, 41px);
-  --f-s-22: clamp(22px, 1rem + 8.27vw, 47px);
+  --f-s-19: clamp(16px, 1rem + 0.8vw, 19px);
+  --f-s-22: clamp(19px, 1rem + 1.6vw, 22px);
 
   /* --f-s-23: clamp(23px, 1rem + 13.07vw, 49px); */
-  --f-s-28: clamp(28px, 1rem + 11.73vw, 60px);
-  --f-s-30: clamp(30px, 1rem + 12.27vw, 64px);
-  --f-s-32: clamp(32px, 1rem + 13.86vw, 68px);
-  --f-s-50: clamp(50px, 1rem + 24.27vw, 107px);
-  --f-s-53: clamp(53px, 1rem + 25.87vw, 113px);
+  --f-s-28: clamp(22px, 1rem + 3.2vw, 28px);
+  --f-s-30: clamp(28px, 1rem + 3.733vw, 30px);
+  --f-s-32: clamp(30px, 1rem + 4.267vw, 32px);
+  --f-s-50: clamp(40px, 1rem + 9.067vw, 50px);
+  --f-s-53: clamp(44px, 1rem + 9.867vw, 53px);
 
   @media (width > 800px) {
-    /* 12, 15, 17, 18, 19, 20, 21, 22, 26, 28, 33, 36, 50, 93, 94 */
+    --layout-gap: min(10.42vw, 200px);
+
+    --f-s-12: clamp(9px, 0.75rem, 12px);
+    --f-s-15: clamp(11.25px, 0.9375rem, 15px);
+
+    /* --f-s-17: clamp(13px, 1rem + 0.05vw, 17px); */
+    --f-s-18: clamp(13.5px, 1rem + 0.1vw, 18px);
+
+    /* --f-s-19: clamp(14.25px, 1rem + 0.1563vw, 19px); */
+    --f-s-20: clamp(15px, 1rem + 0.21vw, 20px);
+
+    /* --f-s-21: clamp(15.75px, 1rem + 0.26vw, 21px); */
+    --f-s-22: clamp(16.5px, 1rem + 0.3125vw, 22px);
+    --f-s-26: clamp(19.5px, 1rem + 0.52vw, 26px);
+    --f-s-28: clamp(21px, 1rem + 0.625vw, 28px);
+    --f-s-33: clamp(24.75px, 1rem + 0.89vw, 33px);
+    --f-s-36: clamp(27px, 1rem + 1.042vw, 36px);
+    --f-s-50: clamp(37.5px, 1rem + 1.77vw, 50px);
+    --f-s-93: clamp(69.75px, 1rem + 4vw, 93px);
+    --f-s-94: clamp(70.5px, 1rem + 4.0625vw, 94px);
   }
 }

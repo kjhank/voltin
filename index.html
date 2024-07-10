@@ -1,15 +1,69 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app">
-      sup
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
+
+<body class="layout">
+  <page-header class="layout-full"></page-header>
+  <header class="hero home">
+    <responsive-image class="hero-image" path="home-hero" alt="dwie baterie AA"></responsive-image>
+    <h2 class="hero-heading">
+      Pewne źródło
+      <span class="accent">energii</span>
+    </h2>
+    <p class="hero-text">
+      Dostarczamy nie tylko produkty, ale solidne rozwiązania energetyczne, które pasują do Twoich unikalnych potrzeb i
+      oczekiwań klientów.
+    </p>
+    <a href="/offer" class="box-link">Sprawdź naszą ofertę</a>
+    <p class="choose-us">
+      <positive-negative-icon></positive-negative-icon>
+      Wybierając nas, stawiasz na niezawodność, konkurencyjne ceny i wsparcie ekspertów, którzy zawsze pomogą Ci wybrać
+      najlepsze baterie i akumulatory, by Twój biznes nigdy nie zwolnił tempa.
+    </p>
+  </header>
+  <div class="about-grid">
+    <section class="about">
+      <h2 class="heading posneg">O nas</h2>
+      <p class="text">
+        Szukasz sprawdzonych baterii, renomowanych marek z pewnego źródła? A może potrzebujesz rady w zakresie doboru
+        odpowiednich
+        akumulatorów, które sprawdzą się w Twoim biznesie? Jesteśmy dla Ciebie!
+      </p>
+      <a href="/about" class="box-link">Dowiedz się więcej</a>
+    </section>
+    <section class="about">
+      <h2 class="heading posneg">Oferta</h2>
+      <p class="text">
+        Cenisz szeroki wybór, wysoką jakość asortymentu i dużą dostępność towaru? Zapoznaj się z naszą ofertą!
+      </p>
+      <a href="/offer" class="box-link">Dowiedz się więcej</a>
+    </section>
+    <section class="about">
+      <h2 class="heading posneg">Jakość</h2>
+      <p class="text">
+        Cenisz jakość wszystkich produktów i usług, które wybierasz i oferujesz, prowadząc swój biznes? My też. Dlatego
+        naszym Klientom dostarczamy jakość, którą sami chcielibyśmy otrzymać.
+      </p>
+      <a href="/quality" class="box-link">Dowiedz się więcej</a>
+    </section>
+  </div>
+  <ul class="icons-grid" role="list">
+    <li><shield-icon></shield-icon>
+      Zaufany partner</li>
+    <li><batteries-icon></batteries-icon>
+      renomowane marki</li>
+    <li><box-icon></box-icon>
+      szeroki wybór asortymentu</li>
+    <li><people-icon></people-icon>
+      wieloletnie doświadczenie</li>
+  </ul>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

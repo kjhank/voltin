@@ -1,0 +1,19 @@
+.choose-us {
+  display: flex;
+  gap: min(7.2vw, 27px);
+  align-items: flex-start;
+
+  padding-block: min(4.53vw, 17px) min(3.2vw, 12px);
+
+  font-size: var(--f-s-9);
+  font-weight: var(--f-w-light);
+  line-height: 1.18;
+
+  border-block: 1px solid var(--c-light);
+
+  positive-negative-icon {
+    flex-shrink: 0;
+    inline-size: min(15.2vw, 57px);
+    block-size: min(10.93vw, 41px);
+  }
+}
