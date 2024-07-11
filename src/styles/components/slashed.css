@@ -1,0 +1,47 @@
+.slashed {
+  margin-block-start: min(11.733vw, 44px);
+  text-align: center;
+
+  section {
+    --gap: min(5.333vw, 20px);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    align-items: center;
+
+    &:not(:last-child)::after {
+      content: '';
+
+      rotate: z -10deg;
+
+      inline-size: 100%;
+      block-size: min(0.533vw, 2px);
+      margin-block: calc(var(--gap) * 1.25) calc(var(--gap) * 1.5);
+
+      background-color: var(--c-accent);
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+
+    & + & {
+      margin-block-start: min(5.333vw, 20px);
+    }
+  }
+
+  .heading {
+    font-size: var(--f-s-22);
+    font-weight: var(--f-w-medium);
+    line-height: 1.23;
+  }
+
+  .text {
+    font-size: var(--f-s-13);
+    font-weight: var(--f-w-light);
+    line-height: 1.231;
+  }
+}

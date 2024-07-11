@@ -28,11 +28,11 @@ export class PageHeader extends HTMLElement {
     </button>
     <nav class="main-navigation">
       <ul role="list">
-        <li><a class="${this.currentPath === '/' ? 'current' : 'null'}" href="/">Strona główna</a></li>
-        <li><a class="${this.currentPath === '/about' ? 'current' : 'null'}" href="/about">About</a></li>
-        <li><a class="${this.currentPath === '/offer' ? 'current' : 'null'}" href="/offer">Oferta</a></li>
-        <li><a class="${this.currentPath === '/quality' ? 'current' : 'null'}" href="/quality">Jakość</a></li>
-        <li><a class="${this.currentPath === '/contact' ? 'current' : 'null'}" href="/contact">Kontakt</a></li>
+        <li><a class="${this.currentPath === '/' ? 'current' : ''}" href="/">Strona główna</a></li>
+        <li><a class="${this.currentPath === '/about' ? 'current' : ''}" href="/about">O nas</a></li>
+        <li><a class="${this.currentPath === '/offer' ? 'current' : ''}" href="/offer">Oferta</a></li>
+        <li><a class="${this.currentPath === '/quality' ? 'current' : ''}" href="/quality">Jakość</a></li>
+        <li><a class="${this.currentPath === '/contact' ? 'current' : ''}" href="/contact">Kontakt</a></li>
       </ul>
     `;
   }

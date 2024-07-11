@@ -1,0 +1,59 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: min(7.5vw, 28px);
+  align-items: center;
+  justify-content: center;
+
+  margin-block-start: min(59.2vw, 222px);
+  padding-block: 0 min(21.33vw, 80px);
+
+  color: var(--c-alt);
+
+  background-image: url('/images/contact-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .heading {
+    display: inline;
+
+    margin-block-end: min(5.33vw, 20px);
+
+    font-size: var(--f-s-50);
+    font-weight: var(--f-w-medium);
+    text-transform: uppercase;
+
+    &::after,
+    &::before {
+      inline-size: min(7.47vw, 28px);
+      filter: saturate(0) brightness(10);
+    }
+
+    &::before {
+      block-size: min(7.2vw, 27px);
+    }
+
+    &::after {
+      block-size: min(2.4vw, 9px);
+    }
+  }
+
+  .text {
+    padding-inline: min(23vw, 86.25px) min(13.33vw, 50px);
+    font-size: var(--f-s-12);
+    font-weight: var(--f-w-light);
+    line-height: 1.25;
+  }
+
+  .box-link {
+    margin-block-start: min(13.33vw, 50px);
+    color: currentcolor;
+    border-color: currentcolor;
+  }
+
+  .contact-image {
+    inline-size: 113.33%;
+    margin-block: max(-48vw, -180px) max(-12vw, -45px);
+  }
+}

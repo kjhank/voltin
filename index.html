@@ -9,7 +9,7 @@
 </head>
 
 <body class="layout">
-  <page-header class="layout-full"></page-header>
+  <page-header class="layout-full" currentpath="/"></page-header>
   <header class="hero home">
     <responsive-image class="hero-image" path="home-hero" alt="dwie baterie AA"></responsive-image>
     <h2 class="hero-heading">
@@ -54,15 +54,48 @@
     </section>
   </div>
   <ul class="icons-grid" role="list">
-    <li><shield-icon></shield-icon>
-      Zaufany partner</li>
-    <li><batteries-icon></batteries-icon>
-      renomowane marki</li>
-    <li><box-icon></box-icon>
-      szeroki wybór asortymentu</li>
-    <li><people-icon></people-icon>
-      wieloletnie doświadczenie</li>
+    <li>
+      <div class="icon-wrapper"><shield-icon></shield-icon></div>
+      Zaufany partner
+    </li>
+    <li>
+      <div class="icon-wrapper"><batteries-icon></batteries-icon></div>
+      renomowane marki
+    </li>
+    <li>
+      <div class="icon-wrapper"><box-icon></box-icon></div>
+      szeroki wybór asortymentu
+    </li>
+    <li>
+      <div class="icon-wrapper"><people-icon></people-icon></div>
+      wieloletnie doświadczenie
+    </li>
   </ul>
+  <section class="contact layout-full">
+    <responsive-image class="contact-image" path="contact" alt="dwie baterie AA"></responsive-image>
+    <h2 class="heading posneg">Kontakt</h2>
+    <p class="text">
+      Chcesz porozmawiać? Nam rozmowy o bateriach, akumulatorach i biznesie nigdy się nie nudzą! Masz pytania na temat
+      produktów, ich dostępności lub chcesz nawiązać współpracę? Skontaktuj się z nami, a przygotujemy dla Ciebie
+      najlepszą możliwą ofertę.
+    </p>
+    <a href="/contact" class="box-link">Dowiedz się więcej</a>
+  </section>
+  <footer class="page-footer">
+    <ul role="list">
+      <li>
+        <a href="#">Polityka prywatności</a>
+      </li>
+      <li>
+        <a href="#">Ustawienia plików cookies</a>
+      </li>
+      <li>
+        <a href="#">Regulamin</a>
+      </li>
+    </ul>
+    <hr />
+    <p class="copyright">Copyright &copy; 2024 Voltin</p>
+  </footer>
   <script type="module" src="/src/main.ts"></script>
 </body>
 

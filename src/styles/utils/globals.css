@@ -15,6 +15,10 @@ body {
 
 responsive-image {
   display: block;
+
+  img {
+    inline-size: 100%;
+  }
 }
 
 .visually-hidden {

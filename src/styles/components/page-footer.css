@@ -1,0 +1,23 @@
+.page-footer {
+  margin-block: min(8.267vw, 31px) min(5.33vw, 20px);
+  color: var(--c-dim);
+  text-align: center;
+
+  ul {
+    font-size: var(--f-s-19);
+    list-style: none;
+  }
+
+  .copyright {
+    font-size: var(--f-s-17);
+  }
+
+  hr {
+    margin-block: min(6.67vw, 25px);
+    border: 1px solid var(--c-light);
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

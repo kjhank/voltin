@@ -12,6 +12,19 @@ page-header {
 
   background-color: var(--c-alt);
 
+  &::before {
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+    inset: auto max(-5.333vw, -20px) 0 auto;
+
+    inline-size: min(38.133vw, 143px);
+    block-size: min(35.467vw, 133px);
+
+    background-image: url('/images/nav-decoration.png');
+  }
+
   .navigation-trigger {
     cursor: pointer;
   }
@@ -55,6 +68,10 @@ page-header {
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
+
+      &.current {
+        color: var(--c-accent);
+      }
     }
   }
 }

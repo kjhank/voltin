@@ -1,7 +1,12 @@
 .icons-grid {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  row-gap: min(10.133vw, 38px);
+
   margin-block: min(22.13vw, 83px) 0;
+
+  font-size: var(--f-s-13);
+  line-height: 1.077;
   list-style: none;
 
   > li {
@@ -14,5 +19,12 @@
 
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .icon-wrapper {
+    display: grid;
+    place-items: center;
+    inline-size: min(14.133vw, 53px);
+    block-size: min(12vw, 45px);
   }
 }

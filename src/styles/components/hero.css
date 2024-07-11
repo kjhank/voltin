@@ -1,14 +1,29 @@
 .hero {
   .hero-text {
-    font-size: var(--f-s-13);
-    font-weight: var(--f-w-light);
-    line-height: 1.23;
+    font-size: var(--f-s-16);
+    line-height: 1.5625;
   }
 
   .hero-heading {
+    display: inline;
     font-size: var(--f-s-53);
     font-weight: var(--f-w-medium);
     line-height: 1.13;
+
+    &.posneg {
+      &::after,
+      &::before {
+        inline-size: min(7.47vw, 28px);
+      }
+
+      &::before {
+        block-size: min(7.2vw, 27px);
+      }
+
+      &::after {
+        block-size: min(2.4vw, 9px);
+      }
+    }
   }
 
   &.home {
@@ -21,6 +36,9 @@
 
     .hero-text {
       margin-block: min(7.47vw, 28px);
+      font-size: var(--f-s-13);
+      font-weight: var(--f-w-light);
+      line-height: 1.23;
     }
 
     .choose-us {
