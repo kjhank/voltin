@@ -34,3 +34,7 @@
     background-image: url('/icons/negative-symbol.svg');
   }
 }
+
+.heading {
+  text-transform: uppercase;
+}

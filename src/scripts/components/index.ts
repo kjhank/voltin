@@ -7,3 +7,5 @@ export * from './BatteriesIcon';
 export * from './BoxIcon';
 export * from './ShieldIcon';
 export * from './PeopleIcon';
+export * from './DiscsIcon';
+export * from './FryingPanIcon';

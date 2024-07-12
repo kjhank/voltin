@@ -11,12 +11,16 @@ export class ResponsiveImage extends HTMLElement {
     return this.getAttribute('alt');
   }
 
+  get loading() {
+    return this.getAttribute('loading') ?? 'lazy';
+  }
+
   render() {
     this.innerHTML = `<picture>
         <source
           srcset="/images/${this.path}.avif"
-          type="image/avif"
           media="(max-width: 800px)"
+          type="image/avif"
         />
         <source
           srcset="/images/${this.path}.webp"
@@ -28,8 +32,16 @@ export class ResponsiveImage extends HTMLElement {
           media="(max-width: 800px)"
           type="image/png"
         />
+        <source
+          srcset="/images/${this.path}-desktop.avif"
+          type="image/avif"
+        />
+        <source
+          srcset="/images/${this.path}-desktop.webp"
+          type="image/webp"
+        />
         <img
-          src="/images/${this.path}o-desktop.png"
+          src="/images/${this.path}-desktop.png"
           alt="${this.alt}"
         />
       </picture>`;

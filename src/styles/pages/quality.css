@@ -1,0 +1,11 @@
+.quality {
+  .quality-copy {
+    padding: 10% 7% 0;
+
+    font-size: var(--f-s-22);
+    font-weight: var(--f-w-semibold);
+    line-height: 1.23;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

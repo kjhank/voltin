@@ -4,6 +4,7 @@ page-header {
   inset: 0 0 auto;
 
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
   block-size: fit-content;
@@ -27,6 +28,32 @@ page-header {
 
   .navigation-trigger {
     cursor: pointer;
+    inline-size: min(8.2667vw, 31px);
+    block-size: min(5.0667vw, 19px);
+    color: var(--c-accent);
+
+    path {
+      transform-origin: center;
+      transition: rotate var(--t-default), translate var(--t-default), scale var(--t-default);
+    }
+
+    &:has(+ .active) {
+      path {
+        &[data-name='middle'] {
+          scale: 0 1;
+        }
+
+        &[data-name='top'] {
+          translate: -7px 7px;
+          rotate: z 45deg;
+        }
+
+        &[data-name='bottom'] {
+          translate: -7px -7px;
+          rotate: z -45deg;
+        }
+      }
+    }
   }
 
   .main-navigation {

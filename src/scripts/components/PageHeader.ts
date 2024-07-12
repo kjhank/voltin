@@ -21,7 +21,9 @@ export class PageHeader extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <brand-logo></brand-logo>
+    <a href="/">
+      <brand-logo></brand-logo>
+    </a>
     <button class="navigation-trigger">
       <span class="visually-hidden">Otwórz nawigację</span>
       <lines-icon></lines-icon>
@@ -33,6 +35,7 @@ export class PageHeader extends HTMLElement {
         <li><a class="${this.currentPath === '/offer' ? 'current' : ''}" href="/offer">Oferta</a></li>
         <li><a class="${this.currentPath === '/quality' ? 'current' : ''}" href="/quality">Jakość</a></li>
         <li><a class="${this.currentPath === '/contact' ? 'current' : ''}" href="/contact">Kontakt</a></li>
+        <li><frying-pan-icon></frying-pan-icon></li>
       </ul>
     `;
   }

@@ -1,0 +1,137 @@
+.highlight {
+  position: relative;
+  margin-block: min(14.4vw, 54px) 0;
+  padding-block: 0 min(25.33vw, 95px);
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+    inset: 0 calc(var(--layout-gap) * -1);
+
+    background-color: var(--c-bright);
+    clip-path: polygon(0 min(15.7333vw, 59px), 100% 0, 100% calc(100% - min(15.7333vw, 59px)), 0 100%);
+  }
+
+  positive-negative-icon {
+    display: block;
+
+    inline-size: min(36.533vw, 137px);
+    block-size: min(23.467vw, 88px);
+    margin-block-end: min(10.933vw, 41px);
+    margin-inline-start: min(19.8225vw, 67px);
+
+    > svg {
+      inline-size: 100%;
+      block-size: 100%;
+    }
+  }
+
+  .text {
+    font-size: var(--f-s-23);
+    line-height: 1.217;
+    text-align: center;
+
+    > .accent {
+      font-size: var(--f-s-30);
+      font-weight: var(--f-w-semibold);
+    }
+  }
+
+  .text-light {
+    padding-inline: 15%;
+
+    font-size: var(--f-s-13);
+    font-weight: var(--f-w-light);
+    line-height: 1.231;
+    text-align: center;
+  }
+
+  .offer-list {
+    margin-block: min(10.667vw, 40px) min(13.6vw, 51px);
+    padding-inline-end: min(11.733vw, 44px);
+
+    font-size: var(--f-s-16);
+    font-weight: var(--f-w-medium);
+    line-height: 1.1875;
+    list-style: none;
+
+    > li {
+      display: flex;
+      gap: min(8.533vw, 32px);
+      align-items: center;
+
+      &::before {
+        content: '';
+
+        display: inline-block;
+        flex-shrink: 0;
+
+        inline-size: min(3.733vw, 14px);
+        block-size: min(5.333vw, 20px);
+
+        background-image: url('/icons/charge-snowman.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      & + & {
+        margin-block-start: min(5.8667vw, 22px);
+      }
+    }
+  }
+
+  &:is(.highlight-offer,
+    .highlight-quality) {
+    padding-block: min(29.333vw, 110px) min(20vw, 75px);
+  }
+
+  &:is(.highlight-quality) {
+    text-align: center;
+
+    > p {
+      margin-block: min(9.334vw, 35px);
+      padding-inline: 5%;
+      font-size: var(--f-s-14);
+
+      &:last-of-type {
+        font-size: var(--f-s-18);
+        font-weight: var(--f-w-medium);
+        line-height: 1.222;
+      }
+    }
+  }
+
+  .quality-image {
+    inline-size: min(47.733vw, 179px);
+    margin-block-end: min(4vw, 15px);
+    margin-inline: auto;
+  }
+
+  &.highlight-accent {
+    padding-block-start: min(34.667vw, 130px);
+    color: var(--c-alt);
+
+    &::after {
+      background-color: var(--c-accent);
+    }
+
+    .text-light {
+      margin-block-start: min(3.2vw, 12px);
+      padding-inline: 13%;
+      font-size: var(--f-s-14);
+    }
+  }
+
+  .offer-highlight-image {
+    inline-size: min(84.8vw, 318px);
+    margin-block-end: min(8.2667vw, 31px);
+    margin-inline: auto;
+  }
+
+  .heading {
+    font-weight: var(--f-w-semibold);
+    text-align: center;
+  }
+}

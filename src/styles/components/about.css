@@ -2,6 +2,7 @@
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: min(8.533vw, 32px);
+  margin-block-start: min(7.4667vw, 28px);
 }
 
 .about {

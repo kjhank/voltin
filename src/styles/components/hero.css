@@ -1,11 +1,17 @@
 .hero {
   .hero-text {
+    margin-block-end: min(15.2vw, 57px);
+    padding-inline-start: min(9.067vw, 34px);
     font-size: var(--f-s-16);
     line-height: 1.5625;
   }
 
   .hero-heading {
-    display: inline;
+    display: inline-block;
+
+    margin-block: min(17.867vw, 67px) min(8.8vw, 33px);
+    margin-inline-start: min(9.067vw, 34px);
+
     font-size: var(--f-s-53);
     font-weight: var(--f-w-medium);
     line-height: 1.13;
@@ -24,10 +30,48 @@
         block-size: min(2.4vw, 9px);
       }
     }
+
+  }
+
+  .hero-image {
+    margin-inline-end: calc(var(--layout-gap) * -1);
+
+    &:has(address) {
+      display: grid;
+      grid-template-areas: 'image';
+      place-items: center;
+
+      address,
+      responsive-image {
+        grid-area: image;
+      }
+
+      address {
+        padding-inline: min(19.4667vw, 73px) var(--layout-gap);
+
+        font-size: var(--f-s-13);
+        font-style: normal;
+        line-height: 1.231;
+        color: var(--c-alt);
+        white-space: pre-line;
+
+        strong {
+          font-weight: var(--f-w-semibold);
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
   }
 
   &.home {
     padding-inline: min(5.33vw, 20px);
+
+    .hero-heading {
+      margin: 0;
+    }
 
     .hero-image {
       inline-size: 100vw;
@@ -36,6 +80,8 @@
 
     .hero-text {
       margin-block: min(7.47vw, 28px);
+      padding-inline: unset;
+
       font-size: var(--f-s-13);
       font-weight: var(--f-w-light);
       line-height: 1.23;
