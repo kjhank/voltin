@@ -19,6 +19,11 @@
 
     text-align: center;
     text-transform: uppercase;
+
+    @media (width > 800px) {
+      gap: min(2.0313vw, 39px);
+      padding-inline: 10%;
+    }
   }
 
   .icon-wrapper {
@@ -26,5 +31,25 @@
     place-items: center;
     inline-size: min(14.133vw, 53px);
     block-size: min(12vw, 45px);
+
+    svg {
+      inline-size: 100%;
+      block-size: 100%;
+    }
+
+    @media (width > 800px) {
+      inline-size: min(4.3vw, 82px);
+      block-size: min(3.65vw, 70px);
+
+      > * {
+        inline-size: auto;
+        block-size: 100%;
+      }
+    }
+  }
+
+  @media (width > 800px) {
+    grid-template: auto / repeat(4, 1fr);
+    font-size: var(--f-s-33);
   }
 }

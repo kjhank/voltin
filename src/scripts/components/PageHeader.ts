@@ -9,6 +9,7 @@ export class PageHeader extends HTMLElement {
     this.navTrigger = this.querySelector('.navigation-trigger');
     this.navTrigger?.addEventListener('click', this.toggleNav.bind(this));
     this.nav = this.querySelector('.main-navigation');
+    this.setupIntersectionObserver();
   }
 
   toggleNav() {
@@ -19,9 +20,22 @@ export class PageHeader extends HTMLElement {
     return this.getAttribute('currentpath');
   }
 
+  setupIntersectionObserver() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.classList.remove('active');
+        } else {
+          this.classList.add('active');
+        }
+      });
+    }, { threshold: 0.95, rootMargin: '-100px 0px 0px 0px' });
+    observer.observe(document.querySelector('.hero-image') as Element);
+  }
+
   render() {
     this.innerHTML = `
-    <a href="/">
+    <a href="/" title="Strona główna">
       <brand-logo></brand-logo>
     </a>
     <button class="navigation-trigger">

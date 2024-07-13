@@ -49,18 +49,19 @@
     --f-s-12: clamp(9px, 0.75rem, 12px);
     --f-s-15: clamp(11.25px, 0.9375rem, 15px);
 
-    /* --f-s-17: clamp(13px, 1rem + 0.05vw, 17px); */
+    --f-s-17: clamp(13px, 1rem + 0.05vw, 17px);
     --f-s-18: clamp(13.5px, 1rem + 0.1vw, 18px);
 
     /* --f-s-19: clamp(14.25px, 1rem + 0.1563vw, 19px); */
     --f-s-20: clamp(15px, 1rem + 0.21vw, 20px);
 
-    /* --f-s-21: clamp(15.75px, 1rem + 0.26vw, 21px); */
+    --f-s-21: clamp(15.75px, 1rem + 0.26vw, 21px);
     --f-s-22: clamp(16.5px, 1rem + 0.3125vw, 22px);
     --f-s-26: clamp(19.5px, 1rem + 0.52vw, 26px);
     --f-s-28: clamp(21px, 1rem + 0.625vw, 28px);
     --f-s-33: clamp(24.75px, 1rem + 0.89vw, 33px);
     --f-s-36: clamp(27px, 1rem + 1.042vw, 36px);
+    --f-s-40: clamp(34px, 1rem + 1.5vw, 40px);
     --f-s-50: clamp(37.5px, 1rem + 1.77vw, 50px);
     --f-s-93: clamp(69.75px, 1rem + 4vw, 93px);
     --f-s-94: clamp(70.5px, 1rem + 4.0625vw, 94px);

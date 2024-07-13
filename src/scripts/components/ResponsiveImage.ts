@@ -15,7 +15,15 @@ export class ResponsiveImage extends HTMLElement {
     return this.getAttribute('loading') ?? 'lazy';
   }
 
+  get dimensions() {
+    const [width, height] = this.getAttribute('dimensions')?.split('x') ?? [100, 100];
+
+    return { width, height };
+  }
+
   render() {
+    const { width, height } = this.dimensions;
+
     this.innerHTML = `<picture>
         <source
           srcset="/images/${this.path}.avif"
@@ -43,6 +51,8 @@ export class ResponsiveImage extends HTMLElement {
         <img
           src="/images/${this.path}-desktop.png"
           alt="${this.alt}"
+          width=${width}
+          height=${height}
         />
       </picture>`;
   }

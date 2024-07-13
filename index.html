@@ -6,26 +6,34 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Voltin</title>
+  <link rel="preload" as="image" href="/images/home-hero.avif" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/home-hero-desktop.avif" fetchpriority="high">
 </head>
 
 <body class="layout">
   <page-header class="layout-full" currentpath="/"></page-header>
   <header class="hero home">
-    <responsive-image class="hero-image" loeading="eager" path="home-hero" alt="dwie baterie AA"></responsive-image>
-    <h2 class="hero-heading">
-      Pewne źródło
-      <span class="accent">energii</span>
-    </h2>
-    <p class="hero-text">
-      Dostarczamy nie tylko produkty, ale solidne rozwiązania energetyczne, które pasują do Twoich unikalnych potrzeb i
-      oczekiwań klientów.
-    </p>
-    <a href="/offer" class="box-link">Sprawdź naszą ofertę</a>
-    <p class="choose-us">
+    <responsive-image class="hero-image" loeading="eager" path="home-hero" alt="dwie baterie AA"
+      dimensions="459x392"></responsive-image>
+    <div class="hero-wrapper">
+      <h2 class="hero-heading">
+        Pewne źródło
+        <span class="accent">energii</span>
+      </h2>
+      <p class="hero-text">
+        Dostarczamy nie tylko produkty, ale solidne rozwiązania energetyczne, które pasują do Twoich unikalnych potrzeb
+        i
+        oczekiwań klientów.
+      </p>
+      <a href="/offer" class="box-link">Sprawdź naszą ofertę</a>
+    </div>
+    <div class="choose-us">
       <positive-negative-icon></positive-negative-icon>
-      Wybierając nas, stawiasz na niezawodność, konkurencyjne ceny i wsparcie ekspertów, którzy zawsze pomogą Ci wybrać
-      najlepsze baterie i akumulatory, by Twój biznes nigdy nie zwolnił tempa.
-    </p>
+      <p>
+        Wybierając nas, stawiasz na niezawodność, konkurencyjne ceny i wsparcie ekspertów, którzy zawsze pomogą Ci wybrać
+        najlepsze baterie i akumulatory, by Twój biznes nigdy nie zwolnił tempa.
+      </p>
+    </div>
   </header>
   <div class="about-grid">
     <section class="about">
@@ -72,14 +80,17 @@
     </li>
   </ul>
   <section class="contact layout-full">
-    <responsive-image class="contact-image" path="contact" alt="dwie baterie AA"></responsive-image>
-    <h2 class="heading posneg">Kontakt</h2>
-    <p class="text">
-      Chcesz porozmawiać? Nam rozmowy o bateriach, akumulatorach i biznesie nigdy się nie nudzą! Masz pytania na temat
-      produktów, ich dostępności lub chcesz nawiązać współpracę? Skontaktuj się z nami, a przygotujemy dla Ciebie
-      najlepszą możliwą ofertę.
-    </p>
-    <a href="/contact" class="box-link">Dowiedz się więcej</a>
+    <responsive-image class="contact-image" path="contact" alt="dwie baterie AA"
+      dimensions="398x444"></responsive-image>
+    <div class="contact-wrapper">
+      <h2 class="heading posneg">Kontakt</h2>
+      <p class="text">
+        Chcesz porozmawiać? Nam rozmowy o bateriach, akumulatorach i biznesie nigdy się nie nudzą! Masz pytania na temat
+        produktów, ich dostępności lub chcesz nawiązać współpracę? Skontaktuj się z nami, a przygotujemy dla Ciebie
+        najlepszą możliwą ofertę.
+      </p>
+      <a href="/contact" class="box-link">Dowiedz się więcej</a>
+    </div>
   </section>
   <footer class="page-footer">
     <ul role="list">

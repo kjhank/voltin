@@ -24,6 +24,12 @@ page-header {
     block-size: min(35.467vw, 133px);
 
     background-image: url('/images/nav-decoration.png');
+    background-image: image-set(url('/images/nav-decoration.avif'), url('/images/nav-decoration.webp'), url('/images/nav-decoration.png'));
+    background-repeat: no-repeat;
+
+    @media (width > 1100px) {
+      display: none;
+    }
   }
 
   .navigation-trigger {
@@ -54,6 +60,10 @@ page-header {
         }
       }
     }
+
+    @media (width > 1100px) {
+      display: none;
+    }
   }
 
   .main-navigation {
@@ -78,6 +88,12 @@ page-header {
       block-size: 80%;
 
       list-style-type: none;
+
+      @media (width > 1100px) {
+        flex-direction: row;
+        gap: min(2.3438vw, 45px);
+        block-size: auto;
+      }
     }
 
     &.active {
@@ -99,6 +115,50 @@ page-header {
       &.current {
         color: var(--c-accent);
       }
+
+      @media (width > 1100px) {
+        font-size: var(--f-s-20);
+
+        &.current {
+          color: var(--c-main);
+        }
+
+        &:hover {
+          color: var(--c-accent);
+        }
+      }
+    }
+
+    @media (width > 1100px) {
+      position: relative;
+      translate: none;
+
+      block-size: auto;
+
+      opacity: 1;
+      background-color: transparent;
+      backdrop-filter: none;
+
+      frying-pan-icon {
+        display: block;
+        inline-size: 1em;
+        block-size: 1em;
+
+        > svg {
+          inline-size: 100%;
+          block-size: 100%;
+        }
+      }
+    }
+  }
+
+  @media (width > 1100px) {
+    padding-block: min(2.917vw, 56px);
+    background-color: transparent;
+    transition: background-color var(--t-fast);
+
+    &.active {
+      background-color: var(--c-alt);
     }
   }
 }

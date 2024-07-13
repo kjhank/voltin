@@ -1,4 +1,6 @@
 .highlight {
+  --offset: min(15.7333vw, 59px);
+
   position: relative;
   margin-block: min(14.4vw, 54px) 0;
   padding-block: 0 min(25.33vw, 95px);
@@ -11,7 +13,12 @@
     inset: 0 calc(var(--layout-gap) * -1);
 
     background-color: var(--c-bright);
-    clip-path: polygon(0 min(15.7333vw, 59px), 100% 0, 100% calc(100% - min(15.7333vw, 59px)), 0 100%);
+    clip-path: polygon(0 var(--offset), 100% 0, 100% calc(100% - var(--offset)), 0 100%);
+
+    @media (width > 1100px) {
+      inset: 0;
+      clip-path: polygon(var(--offset) 0, 100% 0, calc(100% - var(--offset)) 100%, 0 100%);
+    }
   }
 
   positive-negative-icon {
@@ -26,6 +33,16 @@
       inline-size: 100%;
       block-size: 100%;
     }
+
+    @media (width > 1100px) {
+      position: absolute;
+      inset: 50% auto auto -1.5%;
+      translate: 0 -50%;
+
+      inline-size: min(9.95vw, 191px);
+      block-size: min(6.4063vw, 123px);
+      margin: 0
+    }
   }
 
   .text {
@@ -37,6 +54,14 @@
       font-size: var(--f-s-30);
       font-weight: var(--f-w-semibold);
     }
+
+    @media (width > 1100px) {
+      font-size: var(--f-s-28);
+
+      > .accent {
+        font-size: var(--f-s-36);
+      }
+    }
   }
 
   .text-light {
@@ -46,6 +71,12 @@
     font-weight: var(--f-w-light);
     line-height: 1.231;
     text-align: center;
+
+    @media (width > 1100px) {
+      padding-inline: 0 59%;
+      font-size: var(--f-s-18);
+      text-align: start;
+    }
   }
 
   .offer-list {
@@ -80,11 +111,26 @@
         margin-block-start: min(5.8667vw, 22px);
       }
     }
+
+    @media (width > 1100px) {
+      margin-block: min(3.177vw, 61px) min(4vw, 77px);
+      padding-inline: 0 59%;
+      font-size: var(--f-s-26);
+    }
   }
 
   &:is(.highlight-offer,
     .highlight-quality) {
     padding-block: min(29.333vw, 110px) min(20vw, 75px);
+
+    @media (width > 1100px) {
+      padding-block: min(3.2813vw, 63px) min(3.125vw, 60px);
+
+      > .heading {
+        font-size: var(--f-s-40);
+        text-align: start;
+      }
+    }
   }
 
   &:is(.highlight-quality) {
@@ -128,10 +174,26 @@
     inline-size: min(84.8vw, 318px);
     margin-block-end: min(8.2667vw, 31px);
     margin-inline: auto;
+
+    @media (width > 1100px) {
+      position: absolute;
+      inset: 50% min(10.1563vw, 195px) auto auto;
+      translate: 0 -50%;
+
+      inline-size: min(29.5313vw, 567px);
+      margin: 0;
+    }
   }
 
   .heading {
     font-weight: var(--f-w-semibold);
     text-align: center;
+  }
+
+  @media (width > 1100px) {
+    --offset: min(3.5938vw, 69px);
+
+    padding-block: min(5.573vw, 107px) min(4.43vw, 85px);
+    padding-inline: min(11.2vw, 215px);
   }
 }

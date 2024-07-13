@@ -36,5 +36,6 @@
 }
 
 .heading {
+  font-weight: var(--f-w-semibold);
   text-transform: uppercase;
 }
