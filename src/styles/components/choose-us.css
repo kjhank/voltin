@@ -23,14 +23,26 @@
   }
 
   @media (width > 800px) {
+    grid-column: span 2;
     flex-direction: column;
     align-items: flex-end;
+
+    inline-size: 50%;
+    margin-inline: auto;
+
+    positive-negative-icon {
+      margin-inline: auto;
+    }
   }
 
   @media (width > 1100px) {
+    grid-column: unset;
     align-self: end;
+
     margin-block-end: min(3.96vw, 76px);
+
     font-size: var(--f-s-15);
+
     border: none;
 
     positive-negative-icon {
