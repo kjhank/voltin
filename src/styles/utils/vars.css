@@ -47,6 +47,7 @@
     --layout-gap: min(10.42vw, 200px);
 
     --f-s-12: clamp(9px, 0.75rem, 12px);
+    --f-s-14: clamp(11px, 0.875rem, 14px);
     --f-s-15: clamp(11.25px, 0.9375rem, 15px);
 
     --f-s-17: clamp(13px, 1rem + 0.05vw, 17px);
@@ -57,6 +58,7 @@
 
     --f-s-21: clamp(15.75px, 1rem + 0.26vw, 21px);
     --f-s-22: clamp(16.5px, 1rem + 0.3125vw, 22px);
+    --f-s-23: clamp(17px, 1rem + 0.365vw, 23px);
     --f-s-26: clamp(19.5px, 1rem + 0.52vw, 26px);
     --f-s-28: clamp(21px, 1rem + 0.625vw, 28px);
     --f-s-33: clamp(24.75px, 1rem + 0.89vw, 33px);

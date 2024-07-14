@@ -24,6 +24,7 @@
 
   @media (width > 800px) {
     flex-direction: column;
+    align-items: flex-end;
   }
 
   @media (width > 1100px) {
@@ -35,6 +36,10 @@
     positive-negative-icon {
       inline-size: min(13.95vw, 268px);
       block-size: min(9.895vw, 190px);
+    }
+
+    > p {
+      padding-inline: 25% 0;
     }
   }
 }

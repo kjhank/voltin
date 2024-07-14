@@ -11,6 +11,7 @@ export default [
     flatCompat.extends('airbnb-base'),
     flatCompat.extends('airbnb-typescript/base'),
   ),
+  { ignores: ['dist/*'] },
   { files: ['**/*.{js,mjs,cjs,ts}'] },
   {
     languageOptions: {
