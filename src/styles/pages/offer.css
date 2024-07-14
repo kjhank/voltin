@@ -1,9 +1,13 @@
 .offer {
+  &.layout > section:not(.highlight) > .heading {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   @media (width > 1100px) {
     &.layout > section:not(.highlight) > .heading {
       margin-block: min(7.1vw, 136px) min(5.9375vw, 114px);
       font-size: var(--f-s-36);
-      text-align: center;
       white-space: pre-line;
     }
 

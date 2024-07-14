@@ -75,6 +75,7 @@
     font-size: var(--f-s-22);
     font-weight: var(--f-w-medium);
     line-height: 1.23;
+    text-transform: uppercase;
 
     @media (width > 1100px) {
       font-size: var(--f-s-26);

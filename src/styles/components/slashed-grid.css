@@ -1,8 +1,14 @@
 .slashed-grid {
-  display: grid;
+  --gap: min(5.333vw, 20px);
+
+ display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: min(5.333vw, 20px);
+  gap: var(--gap);
   margin-block: min(8vw, 30px) 0;
+
+  &.slashed-grid {
+    grid-column: 2;
+  }
 
   > .wrapper {
     position: relative;
@@ -63,10 +69,12 @@
 
       &::before {
         inset-inline-start: 0;
+        translate: calc(var(--gap) * -0.5) 0;
       }
 
       &::after {
         inset-inline-end: 0;
+        translate: calc(var(--gap) * 0.5) 0;
       }
 
       @media (width > 1100px) {

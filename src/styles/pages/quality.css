@@ -1,4 +1,10 @@
 .quality {
+  .highlight-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: min(8vw, 30px);
+  }
+
   .quality-copy {
     padding: 10% 7% 0;
 
@@ -53,7 +59,6 @@
         }
 
         .highlight-image-wrapper {
-          display: flex;
           gap: min(1.5625vw, 30px);
           align-items: center;
 
