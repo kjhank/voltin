@@ -48,6 +48,7 @@
     positive-negative-icon {
       inline-size: min(13.95vw, 268px);
       block-size: min(9.895vw, 190px);
+      margin-inline: auto 0;
     }
 
     > p {

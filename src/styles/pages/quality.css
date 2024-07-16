@@ -16,7 +16,7 @@
 
     @media (width > 1100px) {
       padding-inline: 0;
-      font-size: var(--f-s-50)
+      font-size: var(--f-s-49)
     }
   }
 
@@ -42,11 +42,6 @@
           font-weight: var(--f-w-light);
         }
 
-        > :is(.heading, .text-light) {
-          padding: unset;
-          text-align: start;
-        }
-
         &.highlight-accent {
           display: grid;
           place-content: center;
@@ -56,9 +51,19 @@
           .text-light {
             text-wrap: balance;
           }
+
+          > .heading {
+            padding-inline: 0 10%
+          }
+        }
+
+        > :is(.heading, .text-light) {
+          padding: unset;
+          text-align: start;
         }
 
         .highlight-image-wrapper {
+          flex-direction: row;
           gap: min(1.5625vw, 30px);
           align-items: center;
 

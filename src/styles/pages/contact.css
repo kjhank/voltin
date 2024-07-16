@@ -1,0 +1,7 @@
+.contact {
+  @media (width > 1100px) {
+    .hero-heading {
+      align-self: start;
+    }
+  }
+}

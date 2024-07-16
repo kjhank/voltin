@@ -25,7 +25,7 @@
 
       @media (width > 1100px) {
         position: absolute;
-        inset: 0 auto 0 calc(100% + var(--gap) / 2);
+        inset: 0 auto 0 94%;
         transform-origin: bottom;
         rotate: z 8deg;
 
@@ -68,6 +68,11 @@
 
     @media (width > 1100px) {
       padding-block: min(2.6vw, 50px);
+
+      &:nth-child(2) {
+        inline-size: 115%;
+        margin-inline-start: -7.5%;
+      }
     }
   }
 

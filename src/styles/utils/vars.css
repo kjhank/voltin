@@ -64,6 +64,7 @@
     --f-s-33: clamp(24.75px, 1rem + 0.89vw, 33px);
     --f-s-36: clamp(27px, 1rem + 1.042vw, 36px);
     --f-s-40: clamp(34px, 1rem + 1.5vw, 40px);
+    --f-s-49: clamp(36px, 1rem + 1.72vw, 49px);
     --f-s-50: clamp(37.5px, 1rem + 1.77vw, 50px);
     --f-s-85: clamp(63.5px, 1rem + 3.6vw, 85px);
     --f-s-93: clamp(69.75px, 1rem + 4vw, 93px);
