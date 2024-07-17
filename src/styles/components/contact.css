@@ -76,7 +76,7 @@
     }
 
     @media (width > 1100px) {
-      inline-size: min(13.49vw, 259px);
+      inline-size: min(16vw, 307px);
     }
   }
 

@@ -33,6 +33,10 @@
         block-size: 100%;
         margin: 0;
       }
+
+      @media (width > 2000px) {
+        inset-inline-start: 98%;
+      }
     }
 
     &:last-child {
