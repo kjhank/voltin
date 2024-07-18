@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+  font-family: var(--f-body);
+  color: var(--c-main);
+
+  & :focus {
+    outline-color: var(--c-accent);
+  }
+}
+
+responsive-image {
+  display: block;
+
+  img {
+    inline-size: 100%;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+
+  inline-size: 1px;
+  block-size: 1px;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}

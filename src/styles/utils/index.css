@@ -1,0 +1,45 @@
+@import url('./reset.css');
+@import url('./vars.css');
+@import url('./globals.css');
+@import url('./layout.css');
+
+.accent {
+  color: var(--c-accent);
+}
+
+.posneg {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+
+    position: absolute;
+
+    inline-size: 0.5em;
+
+    /* inline-size: min(4.45vw, 16px); */
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::before {
+    inset: max(-2vw, -7.5px) 100% auto auto;
+    aspect-ratio: 1.06;
+    background-image: url('/icons/positive-symbol.svg');
+  }
+
+  &::after {
+    inset: calc(100% + min(2vw, 7.5px)) auto auto 100%;
+
+    /* block-size: min(1.33vw, 5px); */
+    aspect-ratio: 3.18;
+    background-image: url('/icons/negative-symbol.svg');
+  }
+}
+
+.heading {
+  font-weight: var(--f-w-semibold);
+  text-wrap: pretty;
+}

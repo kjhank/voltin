@@ -1,0 +1,73 @@
+/* stylelint-disable custom-property-empty-line-before */
+:root {
+  --c-accent: oklch(41% 0.15 265.47deg);
+  --c-main: #3c3c3c;
+  --c-alt: #fff;
+  --c-dim: #77787b;
+  --c-light: #e5e5e5;
+  --c-bright: #f6f6f6;
+
+  --f-body: 'Alexandria', sans-serif;
+  --f-alt: 'Barlow Condensed', serif;
+
+  --f-w-light: 300;
+  --f-w-medium: 500;
+  --f-w-semibold: 600;
+
+  --layout-gap: min(10vw, 37px);
+
+  --t-fast: 200ms;
+  --t-default: calc(var(--t-fast) * 2);
+  --t-slow: calc(var(--t-fast) * 3);
+
+  /* 9, 11, 12, 13, 16, 17, 19, 22, 23, 28, 30, 32, 50, 53 */
+
+  --f-s-9: clamp(7px, 0.5625rem, 9px);
+  --f-s-10: clamp(8px, 0.625rem, 10px);
+  --f-s-11: clamp(9px, 0.6875rem, 11px);
+  --f-s-12: clamp(10px, 0.75rem, 12px);
+
+  --f-s-13: clamp(11px, 0.8125rem, 13px);
+  --f-s-14: clamp(12px, 0.875rem, 14px);
+  --f-s-16: clamp(13px, 1rem, 16px);
+
+  /* --f-s-17: clamp(17px, 1rem + 9.6712vw, 36.267px); */
+  --f-s-18: clamp(15px, 1rem + 0.5333vw, 18px);
+  --f-s-19: clamp(16px, 1rem + 0.8vw, 19px);
+  --f-s-22: clamp(19px, 1rem + 1.6vw, 22px);
+
+  --f-s-23: clamp(21px, 1rem + 1.8667vw, 23px);
+  --f-s-28: clamp(22px, 1rem + 3.2vw, 28px);
+  --f-s-30: clamp(28px, 1rem + 3.733vw, 30px);
+  --f-s-32: clamp(30px, 1rem + 4.267vw, 32px);
+  --f-s-50: clamp(40px, 1rem + 9.067vw, 50px);
+  --f-s-53: clamp(44px, 1rem + 9.867vw, 53px);
+
+  @media (width > 800px) {
+    --layout-gap: min(10.42vw, 200px);
+
+    --f-s-12: clamp(9px, 0.75rem, 12px);
+    --f-s-14: clamp(11px, 0.875rem, 14px);
+    --f-s-15: clamp(11.25px, 0.9375rem, 15px);
+
+    --f-s-17: clamp(13px, 1rem + 0.05vw, 17px);
+    --f-s-18: clamp(13.5px, 1rem + 0.1vw, 18px);
+
+    /* --f-s-19: clamp(14.25px, 1rem + 0.1563vw, 19px); */
+    --f-s-20: clamp(15px, 1rem + 0.21vw, 20px);
+
+    --f-s-21: clamp(15.75px, 1rem + 0.26vw, 21px);
+    --f-s-22: clamp(16.5px, 1rem + 0.3125vw, 22px);
+    --f-s-23: clamp(17px, 1rem + 0.365vw, 23px);
+    --f-s-26: clamp(19.5px, 1rem + 0.52vw, 26px);
+    --f-s-28: clamp(21px, 1rem + 0.625vw, 28px);
+    --f-s-33: clamp(24.75px, 1rem + 0.89vw, 33px);
+    --f-s-36: clamp(27px, 1rem + 1.042vw, 36px);
+    --f-s-40: clamp(34px, 1rem + 1.5vw, 40px);
+    --f-s-49: clamp(36px, 1rem + 1.72vw, 49px);
+    --f-s-50: clamp(37.5px, 1rem + 1.77vw, 50px);
+    --f-s-85: clamp(63.5px, 1rem + 3.6vw, 85px);
+    --f-s-93: clamp(69.75px, 1rem + 4vw, 93px);
+    --f-s-94: clamp(70.5px, 1rem + 4.0625vw, 94px);
+  }
+}

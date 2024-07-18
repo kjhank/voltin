@@ -1,0 +1,39 @@
+.page-footer {
+  margin-block: min(8.267vw, 31px) min(5.33vw, 20px);
+  color: var(--c-dim);
+  text-align: center;
+
+  ul {
+    font-size: var(--f-s-19);
+    list-style: none;
+
+    @media (width > 800px) {
+      display: flex;
+      gap: min(2.3438vw, 45px);
+      font-size: var(--f-s-17);
+    }
+  }
+
+  .copyright {
+    font-size: var(--f-s-17);
+    text-transform: uppercase;
+  }
+
+  hr {
+    margin-block: min(6.67vw, 25px);
+    border: 1px solid var(--c-light);
+
+    @media (width > 800px) {
+      display: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  @media (width > 800px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

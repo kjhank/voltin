@@ -1,0 +1,167 @@
+page-header {
+  position: sticky;
+  z-index: 1;
+  inset: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  block-size: fit-content;
+  padding-block: min(3.73vw, 14px) min(6.93vw, 26px);
+  padding-inline: var(--layout-gap);
+
+  background-color: var(--c-alt);
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+    inset: auto max(-5.333vw, -20px) 0 auto;
+
+    inline-size: min(38.133vw, 143px);
+    block-size: min(35.467vw, 133px);
+
+    background-image: url('/images/nav-decoration.png');
+    background-image: image-set(url('/images/nav-decoration.avif'), url('/images/nav-decoration.webp'), url('/images/nav-decoration.png'));
+    background-repeat: no-repeat;
+
+    @media (width > 1100px) {
+      display: none;
+    }
+  }
+
+  .navigation-trigger {
+    cursor: pointer;
+    inline-size: min(8.2667vw, 31px);
+    block-size: min(5.0667vw, 19px);
+    color: var(--c-accent);
+
+    path {
+      transform-origin: center;
+      transition: rotate var(--t-default), translate var(--t-default), scale var(--t-default);
+    }
+
+    &:has(+ .active) {
+      path {
+        &[data-name='middle'] {
+          scale: 0 1;
+        }
+
+        &[data-name='top'] {
+          translate: -7px 7px;
+          rotate: z 45deg;
+        }
+
+        &[data-name='bottom'] {
+          translate: -7px -7px;
+          rotate: z -45deg;
+        }
+      }
+    }
+
+    @media (width > 1100px) {
+      display: none;
+    }
+  }
+
+  .main-navigation {
+    position: absolute;
+    inset: 100% calc(var(--layout-gap) * -1) auto;
+    translate: 100vw 0;
+
+    block-size: 100lvh;
+
+    opacity: 0;
+    background-color: oklch(100% 0% 0deg / 50%);
+    backdrop-filter: blur(40px);
+
+    transition: translate var(--t-fast), opacity var(--t-fast);
+
+    > ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      block-size: 80%;
+
+      list-style-type: none;
+
+      @media (width > 1100px) {
+        flex-direction: row;
+        gap: min(2.3438vw, 45px);
+        block-size: auto;
+      }
+    }
+
+    &.active {
+      translate: 0;
+      opacity: 1;
+    }
+
+    a {
+      display: block;
+
+      font-size: var(--f-s-32);
+      font-weight: var(--f-w-semibold);
+      line-height: 1.22;
+      color: var(--c-main);
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &.current {
+        color: var(--c-accent);
+      }
+
+      @media (width > 1100px) {
+        font-size: var(--f-s-20);
+        transition: color var(--t-fast);
+
+        &:hover {
+          color: var(--c-accent);
+        }
+      }
+    }
+
+    @media (width > 1100px) {
+      position: static;
+      translate: none;
+
+      block-size: auto;
+
+      opacity: 1;
+      background-color: transparent;
+      backdrop-filter: none;
+
+      frying-pan-icon {
+        display: block;
+        inline-size: 1em;
+        block-size: 1em;
+
+        > svg {
+          inline-size: 100%;
+          block-size: 100%;
+        }
+      }
+    }
+  }
+
+  @media (width > 1100px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-block: min(2.6vw, 50px);
+
+    background-color: transparent;
+
+    transition: background-color var(--t-fast);
+
+    &.active {
+      background-color: var(--c-alt);
+    }
+  }
+}

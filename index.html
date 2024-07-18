@@ -1,13 +1,110 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voltin</title>
+  <link rel="preload" as="image" href="/images/home-hero.avif" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/home-hero-desktop.avif" fetchpriority="high">
+</head>
+
+<body class="layout">
+  <page-header class="layout-full" currentpath="/"></page-header>
+  <header class="hero home layout-full">
+    <responsive-image class="hero-image" loading="eager" path="home-hero" alt="dwie baterie AA"
+      dimensions="459x392"></responsive-image>
+    <div class="hero-wrapper">
+      <h2 class="hero-heading accent">
+        Pewne<br />źródło<br />energii
+      </h2>
+      <p class="hero-text">
+        Dostarczamy nie tylko produkty, ale&nbsp;solidne rozwiązania energetyczne, które pasują do Twoich unikalnych
+        potrzeb
+        i&nbsp;oczekiwań klientów.
+      </p>
+      <a href="/offer" class="box-link">Sprawdź naszą ofertę</a>
+    </div>
+    <div class="choose-us">
+      <positive-negative-icon></positive-negative-icon>
+      <p>
+        Wybierając nas, stawiasz na niezawodność, konkurencyjne ceny i wsparcie ekspertów, którzy zawsze pomogą Ci
+        wybrać
+        najlepsze baterie i akumulatory, by Twój biznes nigdy nie zwolnił tempa.
+      </p>
+    </div>
+  </header>
+  <div class="about-grid">
+    <section class="about">
+      <h2 class="heading posneg">O nas</h2>
+      <p class="text">
+        Szukasz sprawdzonych baterii, renomowanych marek z pewnego źródła? A może potrzebujesz rady w zakresie doboru
+        odpowiednich
+        akumulatorów, które sprawdzą się w Twoim biznesie? Jesteśmy dla Ciebie!
+      </p>
+      <a href="/about" class="box-link">Dowiedz się więcej</a>
+    </section>
+    <section class="about">
+      <h2 class="heading posneg">Oferta</h2>
+      <p class="text">
+        Cenisz szeroki wybór, wysoką jakość asortymentu i dużą dostępność towaru? Zapoznaj się z naszą ofertą!
+      </p>
+      <a href="/offer" class="box-link">Dowiedz się więcej</a>
+    </section>
+    <section class="about">
+      <h2 class="heading posneg">Jakość</h2>
+      <p class="text">
+        Cenisz jakość wszystkich produktów i usług, które wybierasz i oferujesz, prowadząc swój biznes? My też. Dlatego
+        naszym Klientom dostarczamy jakość, którą sami chcielibyśmy otrzymać.
+      </p>
+      <a href="/quality" class="box-link">Dowiedz się więcej</a>
+    </section>
+  </div>
+  <ul class="icons-grid" role="list">
+    <li>
+      <div class="icon-wrapper"><shield-icon></shield-icon></div>
+      Zaufany partner
+    </li>
+    <li>
+      <div class="icon-wrapper"><batteries-icon></batteries-icon></div>
+      renomowane marki
+    </li>
+    <li>
+      <div class="icon-wrapper"><box-icon></box-icon></div>
+      szeroki wybór asortymentu
+    </li>
+    <li>
+      <div class="icon-wrapper"><people-icon></people-icon></div>
+      wieloletnie doświadczenie
+    </li>
+  </ul>
+  <section class="contact layout-full">
+    <responsive-image class="contact-image" path="contact" alt="dwie baterie AA"
+      dimensions="398x444"></responsive-image>
+    <div class="contact-wrapper">
+      <h2 class="heading posneg">Kontakt</h2>
+      <p class="text">
+        Chcesz porozmawiać? Nam rozmowy o bateriach, akumulatorach i biznesie nigdy się nie nudzą! Masz pytania na temat
+        produktów, ich dostępności lub chcesz nawiązać współpracę? Skontaktuj się z nami, a przygotujemy dla Ciebie
+        najlepszą możliwą ofertę.
+      </p>
+      <a href="/contact" class="box-link">Dowiedz się więcej</a>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <ul role="list">
+      <li>
+        <a href="/downloads/Polityka_prywatnosci_PL_voltin.docx.pdf">Polityka prywatności</a>
+      </li>
+      <li>
+        <a href="/downloads/polityka_cookies_voltin.docx.pdf">Ustawienia plików cookies</a>
+      </li>
+    </ul>
+    <hr />
+    <p class="copyright">Copyright &copy; 2024 Voltin</p>
+  </footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
